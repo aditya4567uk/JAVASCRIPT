@@ -177,3 +177,20 @@ console.log(mydt.getFullYear()); // give current year
 console.log(mydt.getDay()); // give number of day
 console.log(mydt.getMinutes()); //mins of current hour
 console.log(mydt.getHours()); //give current hour
+
+//dom-->document object model manipulation
+
+//document.getElementById used when we want to target a specific object by their ID
+document.location; // provides various info about current document
+document.getElementById('btn').click(); // clicking a button using dom
+document.getElementById('btn').style.border='2px solid blue'; // styling border of button using dom
+
+//document.getElementById used when we want to target a specific object by class name
+let elemclass=document.getElementsByClassName("dv");
+console.log(elemclass);
+elemclass[0].classList.add("para"); //adding class para in dv
+
+//inner html ---> used to display html structure of particular class
+console.log(elemclass.innerHTML);
+//inner text --> will display the text inside an element
+console.log(elemclass.innerText);
